@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To do list</title>
+</head>
+<body>
+    <div class="container">
+        <button class="Add-task"><h1>Добавить задачу</h1></button>
+        <div class="modal-container" id="Modal_container">
+            <div class="modal-content">
+                <div class="input-text">
+                    <form>
+                        <input type="text" placeholder="Введи название задачи..." class="task-input" id="task-input">
+                        <button type="button" class="add-list" id="add-task-button">Добавить задачу в список</button>
+                    </form>
+                </div>
+                <button class="Close-modal"><img src="img/close.webp" alt="x"></button>
+            </div>
+        </div>
+        <div class="list-container" id="task-list" style="display: none;"></div>
+        <div class="task-counters" id="task-counters" style="display: none;">
+            <div class="task-counter">Всего задач: <span id="total-tasks">0</span></div>
+            <div class="task-counter">Сколько сделано задач: <span id="completed-tasks">0</span></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
